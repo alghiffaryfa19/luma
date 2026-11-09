@@ -128,8 +128,10 @@ start=256, size=480MiB, type=C12A7328-F81F-11D2-BA4B-00A0C93EC93B, name=LumaBoot
 type=0FC63DAF-8483-4772-8E79-3D69D8477DE4, name=LumaRoot
 EOF
 partx -u "$L" 2>/dev/null || true
+[ -b "${L}p1" ] || partx -a "$L" 2>/dev/null || true
+udevadm settle 2>/dev/null || true
 
-mkfs.vfat -F 32 -S 4096 -n LUMABOOT -i "${BOOT_UUID/-//}" "${L}p1" >/dev/null
+mkfs.vfat -F 32 -S 4096 -n LUMABOOT -i "${BOOT_UUID//-/}" "${L}p1" >/dev/null
 mkfs.ext4 -q -F -L LumaRoot -U "$ROOT_UUID" "${L}p2"
 
 mkdir -p "$MNT_DIR"
