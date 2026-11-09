@@ -227,7 +227,12 @@ cat "$KERNEL_IMAGE" "$DTB" > "$KERNEL_COMBINED"
 
 CMDLINE="console=ttyMSM0,115200 pmos_rootfsopts=defaults rw enforcing=0 pmos_root_uuid=$ROOT_UUID pmos_boot_uuid=$BOOT_UUID ostree=$OSTREE_PATH"
 
-mkbootimg \
+MKBOOTIMG="${WORKSPACE}/scripts/devices/mkbootimg"
+if [ ! -f "$MKBOOTIMG" ]; then
+  MKBOOTIMG="mkbootimg"
+fi
+
+python3 "$MKBOOTIMG" \
   --kernel "$KERNEL_COMBINED" \
   --ramdisk "$INITRAMFS_OUT" \
   --base 0x00000000 \
