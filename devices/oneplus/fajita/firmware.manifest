@@ -2,7 +2,7 @@ H	35	-	-	-
 D	755	-	ath10k	-
 D	755	-	ath10k/WCN3990	-
 D	755	-	ath10k/WCN3990/hw1.0	-
-F	644	136122a460c37a0ae41a7e44219663a7d8d2d3102c686b6e6ef351a3cbe3457a	ath10k/WCN3990/hw1.0/board-2.bin.zst	-
+F	644	9e101aa17d185ae6ead46599ccdadf9074d09b2209f4da9d175166193186e942	ath10k/WCN3990/hw1.0/board-2.bin.zst	-
 F	644	cc26ed34f4d8c062262d49cc084bb652359fe5730313b0aa2953011f1866ed88	ath10k/WCN3990/hw1.0/firmware-5.bin.zst	-
 F	644	d1d4c4657f225413981f08a755f030ab7d3ed7d787761dc24c807efdb5b5a19f	ath10k/WCN3990/hw1.0/notice.txt_wlanmdsp.zst	-
 D	755	-	ath10k/WCN3990/hw1.0/qcm2290	-
@@ -16,7 +16,7 @@ D	755	-	qca	-
 D	755	-	qca/OnePlus	-
 D	755	-	qca/OnePlus/enchilada	-
 F	644	12b6244bc3819272c94db4d14beb39edd00b4221638389b9f7da5d902dcb0d1b	qca/OnePlus/enchilada/crnv21.bin	-
-F	644	2410840a5d3e8f29b5d0b36e53da6f7cc3e1e4e5e7bfabe7e7cea908d55eb824	qca/crbtfw21.tlv	-
+F	644	62ce092b55e5d4bd511a637b3d8b5d56bc9fb39b5fa9639ea0a54f161daff144	qca/crbtfw21.tlv	-
 D	755	-	qcom	-
 F	644	c2e3edc9b762eca147e261207bf751cd0a5f54a9e843b2756bc9f32e9b1dcc73	qcom/a630_gmu.bin.zst	-
 F	644	d25822624ef7c88a958db4dd4731db1876796f7999b664377dd12675ae3e8efd	qcom/a630_sqe.fw.zst	-
